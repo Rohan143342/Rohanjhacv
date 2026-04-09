@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Rohan Kumar Jha</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="back-vid"><source src="images/galaxy.mp4" type="video/mp4"></video>
+    <section class="main-section">
+        <nav>
+            <h1 data-aos="zoom-in" data-aos-duration="1000"><span style="color: #00bfff;">Rohan</span>Kumar</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="contact-section" id="contact" style="padding-top: 50px;">
+            <h1 data-aos="fade-down" data-aos-duration="1000">Get In Touch</h1>
+            <div class="contact-container">
+                <div class="contact-left" data-aos="fade-right" data-aos-duration="1000">
+                    <h3>Send Message</h3>
+                    <form action="mailto:awsrohankumar@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class='bx bxs-envelope'></i>
+                            <span>awsrohankumar@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class='bx bxs-phone'></i>
+                            <span>+91-9334921027</span>
+                        </div>
+    
+                            <div style="margin: 20px 0; padding: 20px; background:rgba(0,191,255,0.08); border:1px solid rgba(0,191,255,0.3); border-radius:12px; text-align:center;"><p style="color:#aaa; margin-bottom:12px; font-size:14px;"><i class="bx bxs-file-pdf" style="color:#00bfff;"></i> &amp;nbsp;Looking for my resume?</p><a href="images/resume.pdf" download="Rohan_Kumar_Jha_CV.pdf" class="btn" style="display:inline-flex;align-items:center;gap:6px;text-decoration:none;margin-right:8px;"><i class="bx bxs-download"></i> Download CV</a><a href="images/resume.pdf" target="_blank" class="btn" style="display:inline-flex;align-items:center;gap:6px;text-decoration:none;background:transparent;border:1px solid #00bfff;color:#00bfff;"><i class="bx bx-show"></i> View CV</a></div><a href="https://github.com/kumarrohan47" target="_blank"><i class="bx bxl-github"></i></a>
+                            <a href="https://linkedin.com/in/rohankumarjha47" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="#" id="backToTop" title="Go to top"><i class='bx bxs-up-arrow-alt'></i></a>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const backToTopButton = document.getElementById("backToTop");
+        window.onscroll = function () { scrollFunction(); };
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopButton.style.display = "flex";
+                setTimeout(() => { backToTopButton.style.opacity = "1"; backToTopButton.style.transform = "scale(1)"; }, 10);
+            } else {
+                backToTopButton.style.opacity = "0"; backToTopButton.style.transform = "scale(0)";
+                setTimeout(() => { if (document.body.scrollTop <= 300 && document.documentElement.scrollTop <= 300) backToTopButton.style.display = "none"; }, 300);
+            }
+        }
+        backToTopButton.addEventListener("click", function(e) { e.preventDefault(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0; });
+    </script>
+</body>
+</html>

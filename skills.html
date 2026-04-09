@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Rohan Kumar Jha</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="back-vid"><source src="images/galaxy.mp4" type="video/mp4"></video>
+    <section class="main-section">
+        <nav>
+            <h1 data-aos="zoom-in" data-aos-duration="1000"><span style="color: #00bfff;">Rohan</span>Kumar</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a class="active" href="skills.html">Skills</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="skills-section" id="skills" style="padding-top: 50px;">
+            <h1 data-aos="fade-down" data-aos-duration="1000">Technical Skills</h1>
+            <div class="skills-container">
+                <div class="skill-category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <h3>Languages</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+                        <div class="skill-item"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+                        <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <h3>Frameworks &amp; Web</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+                        <div class="skill-item"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+                        <div class="skill-item"><i class="devicon-spring-plain colored"></i><span>Spring Boot</span></div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <h3>Tools / Platforms</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+                        <div class="skill-item"><i class='bx bxs-bar-chart-alt-2' style="color:#00bfff;font-size:2rem;"></i><span>Power BI</span></div>
+                        <div class="skill-item"><i class='bx bx-table' style="color:#00bfff;font-size:2rem;"></i><span>Excel</span></div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <h3>Developer Tools</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                        <div class="skill-item"><i class="devicon-github-original"></i><span>GitHub</span></div>
+                        <div class="skill-item"><i class="devicon-amazonwebservices-plain colored"></i><span>AWS</span></div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item"><i class='bx bxs-brain' style="color:#00bfff;font-size:2rem;"></i><span>ML</span></div>
+                    </div>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item"><i class='bx bxs-group' style="color: #00bfff;"></i><span>Teamwork</span></div>
+                        <div class="skill-item"><i class='bx bxs-briefcase-alt-2' style="color: #00bfff;"></i><span>Project Mgmt</span></div>
+                        <div class="skill-item"><i class='bx bxs-brain' style="color: #00bfff;"></i><span>Adaptability</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="#" id="backToTop" title="Go to top"><i class='bx bxs-up-arrow-alt'></i></a>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const backToTopButton = document.getElementById("backToTop");
+        window.onscroll = function () { scrollFunction(); };
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopButton.style.display = "flex";
+                setTimeout(() => { backToTopButton.style.opacity = "1"; backToTopButton.style.transform = "scale(1)"; }, 10);
+            } else {
+                backToTopButton.style.opacity = "0"; backToTopButton.style.transform = "scale(0)";
+                setTimeout(() => { if (document.body.scrollTop <= 300 && document.documentElement.scrollTop <= 300) backToTopButton.style.display = "none"; }, 300);
+            }
+        }
+        backToTopButton.addEventListener("click", function(e) { e.preventDefault(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0; });
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Rohan Kumar Jha</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="back-vid"><source src="images/galaxy.mp4" type="video/mp4"></video>
+    <section class="main-section">
+        <nav>
+            <h1 data-aos="zoom-in" data-aos-duration="1000"><span style="color: #00bfff;">Rohan</span>Kumar</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a class="active" href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="projects-section" id="projects" style="padding-top: 50px;">
+            <h1 data-aos="fade-down" data-aos-duration="1000">Projects</h1>
+            <div class="projects-container">
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <h2>Command-Driven Thread-Safe In-Memory Database with TTL Support</h2>
+                    <p>Engineered a generic key-value store using Concurrent HashMap with O(1) average-time operations. Implemented TTL support with background expiration and lazy clean strategy. Designed thread-safe command execution handling concurrent read/write operations. Built structured exception handling and modular architecture following solid OOP principles.</p>
+                    <p class="project-tech">Tech Stack: Java, Concurrent Programming, OOP</p>
+                    <a href="https://github.com/kumarrohan47" target="_blank" class="btn" style="margin-top: 10px; text-align: center;">View Code <i class='bx bxl-github'></i></a>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <h2>Bias Mitigation in Supervised Learning</h2>
+                    <p>Implemented multiple bias-mitigation methods (reweighting, resampling, demographic parity checks) in a supervised learning pipeline to reduce model unfairness. Preprocessed and cleaned datasets including encoding categorical features, scaling numerical features, and handling missing values. Built and evaluated a Random Forest classifier measuring performance (accuracy, precision, recall, ROC-AUC) and fairness (demographic parity). Analyzed feature importance to identify biased predictors and inform fairness-aware feature selection.</p>
+                    <p class="project-tech">Tech Stack: Python, Scikit-learn, Pandas, Random Forest</p>
+                    <a href="https://github.com/kumarrohan47" target="_blank" class="btn" style="margin-top: 10px; text-align: center;">View Code <i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="#" id="backToTop" title="Go to top"><i class='bx bxs-up-arrow-alt'></i></a>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const backToTopButton = document.getElementById("backToTop");
+        window.onscroll = function () { scrollFunction(); };
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopButton.style.display = "flex";
+                setTimeout(() => { backToTopButton.style.opacity = "1"; backToTopButton.style.transform = "scale(1)"; }, 10);
+            } else {
+                backToTopButton.style.opacity = "0"; backToTopButton.style.transform = "scale(0)";
+                setTimeout(() => { if (document.body.scrollTop <= 300 && document.documentElement.scrollTop <= 300) backToTopButton.style.display = "none"; }, 300);
+            }
+        }
+        backToTopButton.addEventListener("click", function(e) { e.preventDefault(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0; });
+    </script>
+</body>
+</html>

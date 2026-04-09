@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Rohan Kumar Jha</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="back-vid"><source src="images/galaxy.mp4" type="video/mp4"></video>
+    <section class="main-section">
+        <nav>
+            <h1 data-aos="zoom-in" data-aos-duration="1000"><span style="color: #00bfff;">Rohan</span>Kumar</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="about-section" id="about" style="padding-top: 50px;">
+            <h1 data-aos="fade-down" data-aos-duration="1000">About Me</h1>
+            <div class="about-content" data-aos="zoom-in" data-aos-duration="1000">
+                <p>I am Rohan Kumar Jha, a Computer Science Engineering student at Lovely Professional University. I am passionate about building scalable backend systems, applying machine learning to solve real-world problems, and writing clean, maintainable code.</p>
+                <p>My technical expertise spans Java, Python, C++, Spring Boot, and ML frameworks. I have built projects ranging from a thread-safe in-memory database to bias mitigation pipelines in supervised learning. I thrive in team environments and am always eager to learn and grow.</p>
+            </div>
+        </div>
+
+            <!-- Resume Download Section -->
+            <div style="text-align:center; margin: 40px 0 20px;" data-aos="fade-up" data-aos-duration="1000">
+                <h1 style="margin-bottom:20px;">My Resume</h1>
+                <div style="background:rgba(0,0,0,0.5);backdrop-filter:blur(8px);border:1px solid rgba(0,191,255,0.4);border-radius:20px;padding:30px 40px;display:inline-block;max-width:500px;">
+                    <i class='bx bxs-file-pdf' style="font-size:60px;color:#00bfff;display:block;margin-bottom:15px;"></i>
+                    <h3 style="color:#fff;margin-bottom:8px;">Rohan Kumar Jha — CV</h3>
+                    <p style="color:#aaa;margin-bottom:20px;font-size:15px;">Full details on skills, projects, education &amp; achievements</p>
+                    <a href="images/resume.pdf" download="Rohan_Kumar_Jha_CV.pdf" class="btn" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:16px;padding:12px 28px;">
+                        <i class='bx bxs-download'></i> Download CV
+                    </a>
+                    <a href="images/resume.pdf" target="_blank" class="btn" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:16px;padding:12px 28px;margin-left:12px;background:transparent;border:1px solid #00bfff;color:#00bfff;">
+                        <i class='bx bx-show'></i> View Online
+                    </a>
+                </div>
+            </div>
+
+            <h1 data-aos="fade-down" data-aos-duration="1000">Achievements</h1>
+            <div class="achievements-container">
+                <div class="achievement-card" data-aos="flip-left" data-aos-duration="1000">
+                    <i class='bx bxs-certification'></i>
+                    <h3>NPTEL Certification</h3>
+                    <p>Introduction to IoT</p>
+                </div>
+                <div class="achievement-card" data-aos="flip-right" data-aos-duration="1000">
+                    <i class='bx bxs-certification'></i>
+                    <h3>Skill India</h3>
+                    <p>HCL Technologies | HCL TECH</p>
+                </div>
+                <div class="achievement-card" data-aos="flip-left" data-aos-duration="1000">
+                    <i class='bx bxs-trophy'></i>
+                    <h3>3rd Position</h3>
+                    <p>Vibranta Hackathon</p>
+                </div>
+                <div class="achievement-card" data-aos="flip-right" data-aos-duration="1000">
+                    <i class='bx bxs-group'></i>
+                    <h3>Campus Ambassador</h3>
+                    <p>Wayspire Edtech &amp; Vidyadhara</p>
+                </div>
+                <div class="achievement-card" data-aos="flip-up" data-aos-duration="1000">
+                    <i class='bx bxs-heart'></i>
+                    <h3>Volunteer</h3>
+                    <p>We Care NGO</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="certificates.html" class="btn">View All Certificates</a>
+            </div>
+        </div>
+    </section>
+    <a href="#" id="backToTop" title="Go to top"><i class='bx bxs-up-arrow-alt'></i></a>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const backToTopButton = document.getElementById("backToTop");
+        window.onscroll = function () { scrollFunction(); };
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopButton.style.display = "flex";
+                setTimeout(() => { backToTopButton.style.opacity = "1"; backToTopButton.style.transform = "scale(1)"; }, 10);
+            } else {
+                backToTopButton.style.opacity = "0"; backToTopButton.style.transform = "scale(0)";
+                setTimeout(() => { if (document.body.scrollTop <= 300 && document.documentElement.scrollTop <= 300) backToTopButton.style.display = "none"; }, 300);
+            }
+        }
+        backToTopButton.addEventListener("click", function(e) { e.preventDefault(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0; });
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Rohan Kumar Jha</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="back-vid"><source src="images/galaxy.mp4" type="video/mp4"></video>
+    <section class="main-section">
+        <nav>
+            <h1 data-aos="zoom-in" data-aos-duration="1000"><span style="color: #00bfff;">Rohan</span>Kumar</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="education-section" id="education" style="padding-top: 50px;">
+            <h1 data-aos="fade-down" data-aos-duration="1000">My Journey</h1>
+            <div class="journey-container">
+                <div class="journey-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="journey-icon"><i class='bx bxs-graduation'></i></div>
+                    <div class="journey-content">
+                        <h3>Bachelor of Technology - CSE</h3>
+                        <span>Lovely Professional University | 2023 - Present</span>
+                        <p>Phagwara, Punjab</p>
+                    </div>
+                </div>
+                <div class="journey-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="journey-icon"><i class='bx bxs-certification'></i></div>
+                    <div class="journey-content">
+                        <h3>PL/SQL &amp; Data Science Bootcamp</h3>
+                        <span>Code: The Ultimate Bootcamp | Jul' 2025</span>
+                        <p>Practical experience in database programming, analytics, data cleaning, and statistical analysis. Achieved an A grade.</p>
+                    </div>
+                </div>
+                <div class="journey-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="journey-icon"><i class='bx bxs-school'></i></div>
+                    <div class="journey-content">
+                        <h3>Intermediate</h3>
+                        <span>Purnia College</span>
+                        <p>Percentage: 64%</p>
+                    </div>
+                </div>
+                <div class="journey-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="journey-icon"><i class='bx bxs-school'></i></div>
+                    <div class="journey-content">
+                        <h3>Matriculation</h3>
+                        <span>DG High School</span>
+                        <p>Percentage: 78%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="#" id="backToTop" title="Go to top"><i class='bx bxs-up-arrow-alt'></i></a>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const backToTopButton = document.getElementById("backToTop");
+        window.onscroll = function () { scrollFunction(); };
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopButton.style.display = "flex";
+                setTimeout(() => { backToTopButton.style.opacity = "1"; backToTopButton.style.transform = "scale(1)"; }, 10);
+            } else {
+                backToTopButton.style.opacity = "0"; backToTopButton.style.transform = "scale(0)";
+                setTimeout(() => { if (document.body.scrollTop <= 300 && document.documentElement.scrollTop <= 300) backToTopButton.style.display = "none"; }, 300);
+            }
+        }
+        backToTopButton.addEventListener("click", function(e) { e.preventDefault(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0; });
+    </script>
+</body>
+</html>

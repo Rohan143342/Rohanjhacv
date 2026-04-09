@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohan Kumar Jha - Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <video autoplay loop muted plays-inline class="back-vid">
+    <source src="images/galaxy.mp4" type="video/mp4">
+  </video>
+  <section class="main-section">
+    <nav>
+      <h1 data-aos="zoom-in" data-aos-duration="1000"><span style="color: #00bfff;">Rohan</span>Kumar</h1>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero" id="home">
+      <div class="hero-info">
+        <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">Hi, I'm Rohan Kumar Jha</h1>
+        <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">Software Developer &amp; ML Enthusiast</h2>
+        <p data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1000">Computer Science Engineering student at Lovely Professional University. Passionate about building robust backend systems, machine learning pipelines, and solving real-world problems with clean, scalable code using Java, Python, and Spring Boot.</p>
+        <div class="Buttons">
+          <button class="btn" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="1100"
+            onclick="window.location.href='mailto:awsrohankumar@gmail.com'">Hire me</button>
+          <a href="images/resume.pdf" download="Rohan_Kumar_Jha_CV.pdf" class="btn" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="1150" style="display:inline-flex;align-items:center;gap:6px;text-decoration:none;"><i class='bx bxs-download'></i> Download CV</a>
+          <ul class="ul-icons">
+            <li><a href="https://github.com/kumarrohan47" target="_blank" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200"><i class='bx bxl-github'></i></a></li>
+            <li><a href="https://linkedin.com/in/rohankumarjha47" target="_blank" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1300"><i class='bx bxl-linkedin'></i></a></li>
+            <li><a href="mailto:awsrohankumar@gmail.com" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1400"><i class='bx bxs-envelope'></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero-img" data-aos="zoom-in-left" data-aos-duration="2500">
+        <img src="rohan_new.jpg" alt="Rohan Kumar Jha">
+      </div>
+    </div>
+  </section>
+  <a href="#" id="backToTop" title="Go to top"><i class='bx bxs-up-arrow-alt'></i></a>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    const backToTopButton = document.getElementById("backToTop");
+    window.onscroll = function () { scrollFunction(); };
+    function scrollFunction() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopButton.style.display = "flex";
+        setTimeout(() => { backToTopButton.style.opacity = "1"; backToTopButton.style.transform = "scale(1)"; }, 10);
+      } else {
+        backToTopButton.style.opacity = "0"; backToTopButton.style.transform = "scale(0)";
+        setTimeout(() => { if (document.body.scrollTop <= 300 && document.documentElement.scrollTop <= 300) backToTopButton.style.display = "none"; }, 300);
+      }
+    }
+    backToTopButton.addEventListener("click", function(e) { e.preventDefault(); document.body.scrollTop = 0; document.documentElement.scrollTop = 0; });
+  </script>
+</body>
+</html>
